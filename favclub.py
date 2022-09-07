@@ -1,1 +1,1 @@
-print("Not in any clubsand Micheal Jackson")
+print("Not in any clubs and Micheal Jackson")
