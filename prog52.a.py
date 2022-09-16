@@ -1,11 +1,13 @@
-length = int("please enter length: ")
-width = int("please enter length: ")
+length = int(input("Please enter length: "))
+width = int(input("Please enter width: "))
 
 area = length * width
-perim = 2 * length + 2 * width
+perim = (2 * length) + (2 * width)
 
-print ("\nthe length is", length)
-print ("the width is", width)
+print("The length is", length)
+print("The width is", width)
 
-print ("the area is", area)
-print ("the perimeter is", perim)
+print("\nThe area is", area)
+print("The perimeter is", perim)
+
+# Math ops: + - * / %    ** (pow)  // (floor divide)
