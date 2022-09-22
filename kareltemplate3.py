@@ -67,85 +67,46 @@ class ktools:
     self.m()
     self.m()
     self.m()
-    """Print E using beepers"""
-    self.tl()
-    self.put5()
+
+  def fic(self) -> bool:
+    """Front is Clear"""
+    return front_is_clear()
+
+  def fib(self) -> bool:
+    """Front is Blocked"""
+    return not self.fic()
+
+  def ric(self) -> bool:
+    """Right is Clear"""
     self.tr()
-    self.m()
-    self.put2()
+    if self.fic():
+      self.tl()
+      return True  # Immediately exit the function
     self.tl()
-    self.tl()
-    self.m()
-    self.m()
-    self.tl()
-    self.m()
-    self.m()
-    self.tl()
-    self.m()
-    self.put2()
-    self.tl()
-    self.tl()
-    self.m()
-    self.m()
-    self.tl()
-    self.m()
-    self.m()
-    self.tl()
-    self.m()
-    self.put2()
-    self.m()
-    self.m()
-    """Print L using beepers"""
-    self.tl()
-    self.put5()
-    self.tl()
-    self.tl()
-    self.m()
-    self.m()
-    self.m()
-    self.m()
-    self.tl()
-    self.m()
-    self.put2()
-    self.m()
-    self.m()
-    """Print L using beepers"""
-    self.tl()
-    self.put5()
-    self.tl()
-    self.tl()
-    self.m()
-    self.m()
-    self.m()
-    self.m()
-    self.tl()
-    self.m()
-    self.put2()
-    self.m()
-    self.m()
-    """Print o using beepers"""
-    self.put2()
-    self.m()
-    self.put2()
-    self.tl()
-    self.m()
-    self.put2()
-    self.m()
-    self.put2()
-    self.tl()
-    self.m()
-    self.put2()
-    self.tl()
-    self.put2()
-    self.m()
-    self.put2()
-    self.m()
-    self.put2()
-    
+    return False
+
+  def rib(self) -> bool:
+    """Right is Blocked"""
+    return not self.ric()
+
+  def mazemove(self):
+    """Maze Move"""
+    if self.fib():
+      self.tl()
+    else:  # Otherwise...
+      self.m()
+      if self.ric():
+        self.tr()
+        self.m()
+        if self.ric():
+          self.tr()
+          self.m()
+    pass
+
+
 def main():
     """ Karel code goes here! """
     kt = ktools()
-    kt.h()
     
     pass
 

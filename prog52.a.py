@@ -9,5 +9,3 @@ print("The width is", width)
 
 print("\nThe area is", area)
 print("The perimeter is", perim)
-
-# Math ops: + - * / %    ** (pow)  // (floor divide)
