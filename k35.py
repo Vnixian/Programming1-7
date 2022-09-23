@@ -135,6 +135,7 @@ class ktools:
     self.tl()
     self.m()
     self.put2()
+    self.m()
     self.tl()
     self.put2()
     self.m()
