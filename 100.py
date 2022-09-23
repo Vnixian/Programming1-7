@@ -121,32 +121,7 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
-    kt.tl()
-    kt.mm(5)
-    kt.ta()
-    kt.put5()
-    kt.tl()
-    kt.mm(2)
-    kt.put2()
-    kt.m()
-    kt.put2()
-    kt.tl()
-    kt.m()
-    kt.put2()
-    kt.m()
-    kt.put2()
-    kt.tl()
-    kt.m()
-    kt.put2()
-    kt.m()
-    kt.put2()
-    kt.tl()
-    kt.m()
-    kt.put2()
-    kt.m()
-    kt.put2()
-    kt.tl()
-    kt.m()
+    
     pass
 
 

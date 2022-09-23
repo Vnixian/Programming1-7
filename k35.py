@@ -139,8 +139,6 @@ class ktools:
     self.put2()
     self.m()
     self.put2()
-    self.m()
-    self.put2()
     
 def main():
     """ Karel code goes here! """
