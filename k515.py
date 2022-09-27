@@ -1,5 +1,4 @@
 from stanfordkarel import *
-from time import sleep
 
 
 class ktools:
@@ -104,6 +103,61 @@ class ktools:
           self.m()
     pass
 
+  def mm(self, num):
+    """Move Multiple"""
+    for number in range(0, num):
+      self.m()
+
+  def putm(self, num):
+    """Put Multiple"""
+    for i in range(num - 1):
+      self.put()
+      self.m()
+    self.put()
+
+  def pickm(self, num):
+    """Pick Multiple"""
+    for _ in range(num - 1):
+      self.pick()
+      self.m()
+    self.pick()
+
+  def SOB(self) -> bool:
+    """Standing on Beeper"""
+    return beepers_present()
+
+  def jump(self):
+    """Jump for 510"""
+    while self.fic():
+      self.m()
+    self.tl()
+    while self.rib():
+      self.m()
+    self.tr()
+    self.m()
+    self.tr()
+    while self.fic():
+      self.m()
+    self.tl()
+
+  def find(self):
+    """Find for 515"""
+    while not facing_north():
+      self.tl()
+    self.m()
+    if not self.SOB():
+      self.tl()
+      self.m()
+      self.tl()
+      self.m()
+    for _ in range(2):
+      if not self.SOB():
+        self.m()
+        self.tl()
+        self.m()
+    pass
+    
+
 
 def main():
     """ Karel code goes here! """
@@ -111,22 +165,11 @@ def main():
     kt.m()
     kt.tl()
     kt.m()
-    kt.mazemove()
-    sleep(3)
-
+    kt.tr()
     kt.m()
-    kt.m()
-    kt.m()
-    if kt.fib():
-      kt.tl()
-    else:  #Otherwise... 
-      kt.m()
-      if kt.ric():
-        kt.tr()
-        kt.m()
-        if kt.ric():
-          kt.tr()
-          kt.m()
+    while kt.SOB():
+      kt.pick()
+      kt.find()
     pass
 
 
