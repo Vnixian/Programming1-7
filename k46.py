@@ -1,5 +1,4 @@
 from stanfordkarel import *
-from time import sleep
 
 
 class ktools:
@@ -111,22 +110,55 @@ def main():
     kt.m()
     kt.tl()
     kt.m()
-    kt.mazemove()
-    sleep(3)
-
+    kt.m()
+    kt.tr()
+    kt.m()
+    kt.tl()
+    kt.tl()
+    kt.tl()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.m()
+    kt.tl()
     kt.m()
     kt.m()
     kt.m()
-    if kt.fib():
-      kt.tl()
-    else:  # Otherwise...
-      kt.m()
-      if kt.ric():
-        kt.tr()
-        kt.m()
-        if kt.ric():
-          kt.tr()
-          kt.m()
+    kt.tr()
+    kt.m()
+    kt.tl()
+    kt.tl()
+    kt.tl()
+    kt.m()
+    kt.m()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.m()
+    kt.m()
+    kt.tr()
+    kt.m()
+    kt.tl()
+    kt.tl()
+    kt.tl()
+    kt.m()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.m()
+    kt.m()
+    kt.tr()
+    kt.m()
+    kt.tl()
+    kt.tl()
+    kt.tl()
+    kt.m()
+    kt.m()
+    kt.tl()
     pass
 
 
